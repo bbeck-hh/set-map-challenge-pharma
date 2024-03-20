@@ -14,14 +14,17 @@ public class Pharmacy {
         this.medication = medication;
     }
 
+    // Zählt die Medikamente
     public long getCount() {
         return this.medication.size();
     }
 
+    // Finde ein Medikament nach dem Namen
     public Medication find(String medicationName) {
         return this.medication.get(medicationName);
     }
 
+    // Lösche ein Medikament
     public void delete(String medicationName) {
         this.medication.remove(medicationName);
     }
